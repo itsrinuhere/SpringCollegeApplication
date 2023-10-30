@@ -31,3 +31,6 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+//application {
+//	mainClassName = 'com.web.college.CollegeApplication' // Replace with your application's main class
+//}
