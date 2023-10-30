@@ -1,3 +1,14 @@
+#  To Action for the Repository usage
+ To clone the Repository
+```shell
+git clone https://github.com/itsrinuhere/SpringCollegeApplication
+
+```
+To pull the Repository
+```shell
+git pull origin master
+
+```
 # EndPoints
 ## Student Endpoints
 1. `http://localhost:8080/api/student` method Get,Testing status: succesfull Response code 200
@@ -52,7 +63,8 @@
   
 }
 ```
-
+To Upload a certificate file :
+- firebase object upload
 
 # Schemas of Student
 ### project table
