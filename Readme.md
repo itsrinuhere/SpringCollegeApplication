@@ -31,32 +31,42 @@ git pull origin master
 10. `http://localhost:8080/api/student/{id}` method DELETE 
 11. `http://localhost:8080/api/student?q=project` method GET by
 12. `http://localhost:8080/api/student?q=project&filter=domain` Method GET
-13. `http://localhost:8080/api/student/certification` METHOD= POST
+13. `http://localhost:8080/api/student/certification` METHOD= POST tested success
    ```json
 {
     "studentid":"19641a05m8",
-    "name":"",
-    "company":"",
-    "startdate":"",
-    "enddate":"",
-    "verification":"http://google.com"
+    "name":"cloud certification",
+    "expire":"2/2/2021",
+    "verification":"https://google.com",
+    "certify":"google.inc"
+}
+  ```
+expire require date or null;
+14. `http://localhost:8080/api/student/internship` METHOD = POST tested success
+  ```json
+{
+  "studentid":"19641a05m8",
+  "name":"Marketing interntest1",
+  "company":"google",
+  "startdate":"23/9/2021",
+  "enddate":"23/09/2021",
+  "verification":"http://google.com"
 }
 
-  ```
-14. `http://localhost:8080/api/student/internship` METHOD = POST
-  ```json
-{
-  
-}
 ```
+Date format should DD/MM/YYYY and id should be registered 
 15. `http://localhost:8080/api/student/i/internship/uniqueId` method=delete
-16. `http://localhost:8080/api/student/project` Method = post
+16. `http://localhost:8080/api/student/project` Method = post tested success
   ```json
 {
-  
+  "studentid":"19641a05m8",
+  "tags":"cloud, certification",
+  "description":"xyzxyz",
+  "url":"https://google.com",
+  "verification":"google.inc"
 }
 ```
-17. `http://localhost:8080/api/student/skills` method =POST
+17. `http://localhost:8080/api/student/skill` method =POST
 18. `` method post
   ```json
 {
