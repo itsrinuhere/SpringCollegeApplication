@@ -16,6 +16,14 @@ public class StudentController {
     @Autowired
     StudentService Ss;
     Utility ut= new Utility();
+    @GetMapping("profile/{id}")
+    ResponseEntity<Object> getImage(@PathVariable String id){
+        return null;//url send
+    }
+    @PostMapping("profile/{id}")
+    ResponseEntity<Object> saveImage(@PathVariable String id){
+        return null;//file object save database
+    }
     @PostMapping("student")
     ResponseEntity<Object> saveNewStudent(@RequestBody HashMap<String,Object> map){
     int res = Ss.saveStudent(map);

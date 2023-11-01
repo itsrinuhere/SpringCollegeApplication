@@ -12,7 +12,7 @@ public class CorConfiguration implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000") // Replace with the origin(s) that should be allowed
+                .allowedOrigins("http://localhost:3000","https://2a20-106-76-210-5.ngrok-free.app") // Replace with the origin(s) that should be allowed
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true);
