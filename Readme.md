@@ -27,7 +27,8 @@ git pull origin master
 6. `http://localhost:8080/api/student/internship ` Method GET testing : success
 7. `http://localhost:8080/api/student/project` Method Get testing :success
 8. `http://localhost:8080/api/student?q=internship&filter=domain` Method = GET domains
-9. `http://localhost:8080/api/student/{id}` method GET
+9. `http://localhost:8080/api/student/{id}` method GET testing : success
+10. `http://localhost:8080/api/student/{id}?id=12122` method get success
 10. `http://localhost:8080/api/student/{id}` method DELETE 
 11. `http://localhost:8080/api/student?q=project` method GET by
 12. `http://localhost:8080/api/student?q=project&filter=domain` Method GET
