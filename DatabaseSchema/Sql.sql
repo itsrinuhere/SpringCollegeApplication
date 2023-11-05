@@ -38,3 +38,4 @@ create table internship(
 );
 -- create table resume();
 
+select * from users;

@@ -16,6 +16,10 @@ public class StudentController {
     @Autowired
     StudentService Ss;
     Utility ut= new Utility();
+    @GetMapping("/public/resource")
+    public ResponseEntity<String> getPublicResource() {
+        return ResponseEntity.ok("This is a public resource.");
+    }
     @GetMapping("profile/{id}")
     ResponseEntity<Object> getImage(@PathVariable String id){
         return null;//url send

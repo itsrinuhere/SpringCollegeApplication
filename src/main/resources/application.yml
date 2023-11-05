@@ -7,7 +7,8 @@ spring:
 #  api-keys:
 #    - 'your-api-key-1'
 #    - your-api-key-2
-
+api:
+  secret: 12345
 #
 #
 #
